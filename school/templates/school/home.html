@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Q1</h2>
+<h1>STUDENT DETAIL</h1>
+{% for student in students_data%}
+    {{student.name}}<br>
+{% endfor %}
+<h2>filter</h2>
+{% for student in s1_data %}
+<h3>{{student.name}}</h3>
+{% endfor %}
+<h2>exclude</h2>
+{% for student in s2_data %}
+<h3>{{student.name}}</h3>
+{% endfor %}
+
+<h2>orderby</h2>
+{% for student in s3_data %}
+<h4>{{student.marks}}</h4>
+{% endfor %}
+<h2>using hypen</h2>
+{% for student in s31_data %}
+<h3>{{student.marks}}</h3>
+{% endfor %}
+<h2>?</h2>
+{% for student in s32_data %}
+<h3>{{student.marks}}</h3>
+{% endfor %}
+
+<h2>reverse</h2>
+{% for student in s4_data %}
+<h3>{{student.name}}--{{student.roll_no}}</h3>
+{% endfor %}
+<h2>slicing</h2>
+{% for student in s41_data %}
+<h3>{{student.name}}--{{student.roll_no}}</h3>
+{% endfor %}
+<h2>values</h2>
+{% for student in s5_data %}
+<h3>{{student.name}}--{{student.roll_no}}</h3>
+{% endfor %}
+<h2>values 2</h2>
+{% for student in s51_data %}
+<h3>{{student.name}}--{{student.city}}</h3>
+{% endfor %}
+</body>
+</html>
